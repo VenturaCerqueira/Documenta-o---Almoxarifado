@@ -72,7 +72,7 @@ Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
    **Table:**  nota_fiscal
 
    **Columns:** <br>
-   Adicionar (total_nota decimal(10,3))
+   Adicionar (total_nota decimal(10,2))
 
 
    | **id**             | int AI PK      |
