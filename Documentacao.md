@@ -98,8 +98,6 @@ Além disso, dois novos campos serão adicionados na seção **"Cadastro de Usu�
 * **Secretarias Secundárias** : Permite ao administrador selecionar várias opções ou marcar "tudo".
 * **Lotações Secundárias**:  Oferece funcionalidade semelhante, permitindo múltiplas escolhas ou seleção total.
 
-Os novos campos seguirão o modelo de interação e usabilidade já estabelecido pelo campo existente de **"Almoxarifado Administradas"**, garantindo uniformidade e facilidade no uso da interface.
-
 Além disso, será necessário incluir dois novos campos no **"Cadastro de Usuário"** para registrar informações relacionadas ao processo de troca. Os novos campos serão denominados **"Secretarias Secundárias"** e **"Lotações Secundárias**, permitindo que o administrador opte por selecionar "tudo" ou realizar escolhas múltiplas. Esses campos seguirão o modelo do campo já existente de **"Almoxarifado Administradas"**, garantindo consistência e facilidade de uso.
 
 **Inclusão:**
@@ -108,12 +106,62 @@ Além disso, será necessário incluir dois novos campos no **"Cadastro de Usuá
 > * Modal (Com campos Lotação Secundaria e Secretaria Secundaria) listando os dados cadastrado ao usuario;
 > * Campos em "cadastro de usuario" com opção de multipla escolha (selecionar tudo) - "Secretaria Secundaria" e "Lotação secundaria"
 >
->   http://www.keepinformatica.com/almoxarifado/web/user-management/user/create
+>   Route: http://www.keepinformatica.com/almoxarifado/web/user-management/user/create
 >
 >   ![1744718660320](images/Documentacao/1744718660320.png)
 >
 >   ![1744718684370](images/Documentacao/1744718684370.png)
+>
+> Adicionar:
+>
+>
+> | fk_lotacao_secundaria    | int |
+> | ------------------------ | --- |
+> | fk_secretaria_secundaria | int |
+>
+> Table:** user - Atualmente
+>
+> **Columns:**
+>
+>
+> | **id**              | int AI PK    |
+> | ------------------- | ------------ |
+> | **fk\_entidade**    | int          |
+> | **fk\_lotacao**     | int          |
+> | **fk\_secretaria**  | int          |
+> | username            | varchar(255) |
+> | foto                | text         |
+> | nome\_completo      | varchar(100) |
+> | auth\_key           | varchar(32)  |
+> | password\_hash      | varchar(255) |
+> | confirmation\_token | varchar(255) |
+> | status              | int          |
+> | superadmin          | smallint     |
+> | created\_at         | int          |
+> | updated\_at         | int          |
+> | registration\_ip    | varchar(15)  |
+> | bind\_to\_ip        | varchar(255) |
+> | email               | varchar(128) |
+> | email\_confirmed    | smallint     |
+>
+> Criar tabelas:
+> **Tabela:** secretaria_secundaria
+>
+>
+> | id            | int |
+> | ------------- | --- |
+> | fk_secretaria | int |
+> | fk_user       | int |
+
+> **Tabela:** lotacao_secundaria
+> | id             | int |
+> |----------------|-----|
+> | fk_lotacao     | int |
+> | fk_user        | int | 
+>
+>
 > * Criação de um span (Toda vez que o usuario for "Criar Requisição", aparecer um span [ Usuário esta lotado na lotação [Lotação] - [ secretaria], assim evitando que o usuario crie erros de requisição, ao "Salvar" deve-se criar outro < span > que solicite confirmação do usuario trazendo as mesmas informações { [usuario] esta lotado na [lotaçao] - [ secretaria]}).
+
 
 ## 3. Cálculo de Estoque Máximo e Quantidade de Reposição🧮
 
