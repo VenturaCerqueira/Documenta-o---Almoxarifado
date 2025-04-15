@@ -81,7 +81,7 @@ Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
    | numero             | varchar(100)   |
    | serie              | varchar(100)   |
    | data\_emissao      | date           |
-   | tota_nota          | decimal (10,3) |
+   | tota_nota          | decimal (10,2) |
 
 ## 2. Alteração de Lotações X Secretarias 🛠️
 
