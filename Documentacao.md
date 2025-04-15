@@ -91,8 +91,6 @@ O Sistema deve permitir que os usuários possam solicitar materiais para outros 
 
 **Descrição alteração:**
 
-O sistema será atualizado para permitir que o usuário realize a troca de "Lotação" e "Secretaria", com base nas informações previamente cadastradas e atualizadas no perfil do usuário. Será adicionado um botão na parte superior da navegação ( < Nav > ), visando facilitar o processo de alteração. Este botão abrirá uma nova janela modal, exibindo uma lista de "Secretarias" e "Lotações" disponíveis para seleção.
-
 O sistema será atualizado para permitir que os usuários realizem a troca de **"Lotação"** e **"Secretaria"**, utilizando as informações previamente cadastradas e atualizadas no perfil de cada usuário. Para facilitar esse processo, será incluído um botão na parte superior da navegação (< Navbar >), que, ao ser clicado, abrirá uma nova janela modal. Essa modal exibirá uma lista completa de **"Secretarias"** e **"Lotações"**, permitindo a seleção direta de opções.
 
 Além disso, dois novos campos serão adicionados na seção **"Cadastro de Usuário"**, com o objetivo de armazenar informações referentes ao processo de troca:
