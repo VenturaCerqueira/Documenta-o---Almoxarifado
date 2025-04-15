@@ -64,7 +64,7 @@ Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
    ```
 
    ![1744655997076](images/Documentacao/1744655997076.png)
-3. Criação de uma nova tela de confirmação ou Fianlização dos dados trazendo resumo mais um novo botão "Finalizar" --> atualizando "Situação" para 0 => 'Realizada'; (total da nota)<br>
+3. Criação de uma nova tela de confirmação ou Fianlização dos dados trazendo resumo mais um novo botão "Finalizar" --> atualizando "Situação" para 0 => 'Realizada'; <br>
    Exemplo igulmente a view:
    ![1744655844748](images/Documentacao/1744655844748.png)
 4. Criação de um novo campo ao selecionar "Entrada de Nota Fiscal" (Um cadastro de NFS - Nota fiscal) - sera necessario criação desse campo "Total da Nota" aonde ao finalizar utilizara para calculo de conferencia de preenchimento das informações.![1744745922626](images/Documentacao/1744745922626.png)
