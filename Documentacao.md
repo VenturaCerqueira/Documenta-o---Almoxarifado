@@ -26,12 +26,12 @@
 O sistema deve permitir que as entradas de notas fiscais possam ser continuada no dia seguinte e alteradas futuramente caso algum erro seja detectado.<br>
 
 **Atualmente:**![1744650244889](images/Documentacao/1744650244889.png)
-Atualmente, o processo de **Movimentação Geral** funciona da seguinte maneira: ao clicar em **"Criar Movimentação Geral"**, o sistema exibe todas as solicitações de cadastro, incluindo os campos  **"Almoxarifado de Origem"** , **"Operação"** e outros parâmetros relevantes.Movimentação Geral hoje funciona da seguinte forma ao iniciar clicando em "Criar Movimentação Geral", vem todas as solicitações de cadastro "Almoxarifado de Origem", "Operação" e outros campos.  Solicitação vai ser necessario criar uma novo "Status"(Em processo) e uma nova opção em "Ações" para finalizar "Movimentação Geral".
+Movimentação Geral hoje funciona da seguinte forma ao iniciar clicando em "Criar Movimentação Geral", vem todas as solicitações de cadastro "Almoxarifado de Origem", "Operação" e outros campos.  Solicitação vai ser necessario criar uma novo "Status"(Em andamento) e uma nova opção em "Ações" para finalizar "Movimentação Geral".
 
 #### Solicitação de Alteração:
 
 1. **Novo Status**:<br>
-   Será necessário adicionar o status **"Em Processo"**, para indicar que a movimentação está sendo realizada e ainda não foi concluída.
+   Será necessário adicionar o status **"Em andamento"**, para indicar que a movimentação está sendo realizada e ainda não foi concluída.
 2. **Nova Opção em "Ações"**:<br>
    Será incluída uma opção na seção **Ações** para permitir a finalização da **Movimentação Geral**, facilitando o encerramento do processo diretamente pela interface.
 
@@ -70,9 +70,10 @@ Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
    ![1744655844748](images/Documentacao/1744655844748.png)
 4. Criação de um novo campo ao selecionar "Entrada de Nota Fiscal" (Um cadastro de NFS - Nota fiscal) - sera necessario criação desse campo "Total da Nota" aonde ao finalizar utilizara para calculo de conferencia de preenchimento das informações.![1744745922626](images/Documentacao/1744745922626.png)
 
-   **Table:**nota_fiscal
+   **Table:**  nota_fiscal
 
-   **Columns:** <br> Add (total_nota decimal(10,3))
+   **Columns:** <br>
+   Adicionar (total_nota decimal(10,3))
 
 
    | **id**             | int AI PK      |
@@ -82,7 +83,6 @@ Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
    | serie              | varchar(100)   |
    | data\_emissao      | date           |
    | tota_nota          | decimal (10,3) |
-5.
 
 ## 2. Alteração de Lotações X Secretarias 🛠️
 
