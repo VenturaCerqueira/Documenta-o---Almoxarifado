@@ -30,9 +30,9 @@ O sistema deve permitir que as entradas de notas fiscais possam ser continuada n
 #### Solicitação de Alteração:
 
 1. **Novo Status**:<br>
-   Será necessário adicionar o status **"Em andamento"**, para indicar que a movimentação está sendo realizada e ainda não foi concluída.
+   Será necessário adicionar um novo status **"Em andamento"**, para indicar que a movimentação está sendo realizada e ainda não foi concluída.
 2. **Nova Opção em "Ações"**:<br>
-   Será incluída uma opção na seção **Ações** para permitir a finalização da **Movimentação Geral**, facilitando o encerramento do processo diretamente pela interface.
+   Será incluída uma opção no botão **Ações** para permitir a finalização da **Movimentação Geral**, facilitando o encerramento do processo diretamente pela interface.
 
 ```
 Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
