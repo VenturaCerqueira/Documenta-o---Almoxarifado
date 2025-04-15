@@ -1,7 +1,6 @@
-# Guia de Organização de Documento - Almoxarifado
+# Guia de Organização de Documento - Patrimonio
 
-
-**Titulo:**  Organização mudanças sistema de Almoxarifado web. <br><br>
+**Titulo:**  Organização mudanças sistema de patrimonio web. <br><br>
 **Data inicio:**  2025-04-14 <br>
 **Ultima atualização:**  2025-04-14<br>
 **Version:**  1.0 <br>
@@ -70,6 +69,20 @@ Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
    Exemplo igulmente a view:
    ![1744655844748](images/Documentacao/1744655844748.png)
 4. Criação de um novo campo ao selecionar "Entrada de Nota Fiscal" (Um cadastro de NFS - Nota fiscal) - sera necessario criação desse campo "Total da Nota" aonde ao finalizar utilizara para calculo de conferencia de preenchimento das informações.![1744745922626](images/Documentacao/1744745922626.png)
+
+   **Table:**nota_fiscal
+
+   **Columns:** <br> Add (total_nota decimal(10,3))
+
+
+   | **id**             | int AI PK      |
+   | ------------------ | -------------- |
+   | **fk\_fornecedor** | int            |
+   | numero             | varchar(100)   |
+   | serie              | varchar(100)   |
+   | data\_emissao      | date           |
+   | tota_nota          | decimal (10,3) |
+5.
 
 ## 2. Alteração de Lotações X Secretarias 🛠️
 
