@@ -6,7 +6,7 @@
 **Version:**  1.0 <br>
 **Sistema:**  Almoxarifado - web
 
-**## Princípios Situações:****🖥️ - Solicitações:**
+## Princípios Situações - Solicitações
 
 1. Permitir conferência e correção de entradas de notas fiscais e outros tipos de entrada;
 2. Mesmo usuário pedir para vários setores
