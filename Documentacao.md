@@ -102,66 +102,63 @@ Além disso, será necessário incluir dois novos campos no **"Cadastro de Usuá
 
 **Inclusão:**
 
-> * Criar um novo botão na área do < Navbar > "Trocar Lotação";
-> * Modal (Com campos Lotação Secundaria e Secretaria Secundaria) listando os dados cadastrado ao usuario;
-> * Campos em "cadastro de usuario" com opção de multipla escolha (selecionar tudo) - "Secretaria Secundaria" e "Lotação secundaria"
->
->   Route: http://www.keepinformatica.com/almoxarifado/web/user-management/user/create
->
->   ![1744718660320](images/Documentacao/1744718660320.png)
->
->   ![1744718684370](images/Documentacao/1744718684370.png)
->
-> Adicionar:
->
->
-> | fk_lotacao_secundaria    | int |
-> | ------------------------ | --- |
-> | fk_secretaria_secundaria | int |
->
-> Table:** user - Atualmente
->
-> **Columns:**
->
->
-> | **id**              | int AI PK    |
-> | ------------------- | ------------ |
-> | **fk\_entidade**    | int          |
-> | **fk\_lotacao**     | int          |
-> | **fk\_secretaria**  | int          |
-> | username            | varchar(255) |
-> | foto                | text         |
-> | nome\_completo      | varchar(100) |
-> | auth\_key           | varchar(32)  |
-> | password\_hash      | varchar(255) |
-> | confirmation\_token | varchar(255) |
-> | status              | int          |
-> | superadmin          | smallint     |
-> | created\_at         | int          |
-> | updated\_at         | int          |
-> | registration\_ip    | varchar(15)  |
-> | bind\_to\_ip        | varchar(255) |
-> | email               | varchar(128) |
-> | email\_confirmed    | smallint     |
->
-> Criar tabelas:
-> **Tabela:** secretaria_secundaria
->
->
-> | id            | int |
-> | ------------- | --- |
-> | fk_secretaria | int |
-> | fk_user       | int |
 
-> **Tabela:** lotacao_secundaria
-> | id             | int |
-> |----------------|-----|
-> | fk_lotacao     | int |
-> | fk_user        | int | 
->
->
-> * Criação de um span (Toda vez que o usuario for "Criar Requisição", aparecer um span [ Usuário esta lotado na lotação [Lotação] - [ secretaria], assim evitando que o usuario crie erros de requisição, ao "Salvar" deve-se criar outro < span > que solicite confirmação do usuario trazendo as mesmas informações { [usuario] esta lotado na [lotaçao] - [ secretaria]}).
+- Criar um novo botão na área do < Navbar > "Trocar Lotação";
 
+* Modal (Com campos Lotação Secundaria e Secretaria Secundaria) listando os dados cadastrado ao usuario;
+* Campos em "cadastro de usuario" com opção de multipla escolha (selecionar tudo) - "Secretaria Secundaria" e "Lotação secundaria"
+
+  Route: http://www.keepinformatica.com/almoxarifado/web/user-management/user/create
+
+  ![1744718660320](images/Documentacao/1744718660320.png)
+
+  ![1744718684370](images/Documentacao/1744718684370.png)
+
+Adicionar:
+
+
+| fk_lotacao_secundaria    | int |
+| ------------------------ | --- |
+| fk_secretaria_secundaria | int |
+
+**Table:** user - Atualmente
+
+**Columns:**
+
+
+| **id**              | int AI PK    |
+| ------------------- | ------------ |
+| **fk\_entidade**    | int          |
+| **fk\_lotacao**     | int          |
+| **fk\_secretaria**  | int          |
+| username            | varchar(255) |
+| foto                | text         |
+| nome\_completo      | varchar(100) |
+| auth\_key           | varchar(32)  |
+| password\_hash      | varchar(255) |
+| confirmation\_token | varchar(255) |
+| status              | int          |
+| superadmin          | smallint     |
+| created\_at         | int          |
+| updated\_at         | int          |
+| registration\_ip    | varchar(15)  |
+| bind\_to\_ip        | varchar(255) |
+| email               | varchar(128) |
+| email\_confirmed    | smallint     |
+
+**Criar tabelas:**
+
+**Tabela:**  secretaria_secundaria
+
+
+| id            | int |
+| ------------- | --- |
+| fk_secretaria | int |
+
+* Criação de um span: <br>
+  Toda vez que o usuario for "Criar Requisição", aparecer um span [ Usuário esta lotado na lotação [Lotação] - [ secretaria]. <br>
+  Assim evitando que o usuario crie erros de requisição. <br>
+* Ao "Salvar" deve-se criar outro < span > que solicite confirmação do usuario trazendo as mesmas informações { [usuario] esta lotado na [lotaçao] - [ secretaria]}).
 
 ## 3. Cálculo de Estoque Máximo e Quantidade de Reposição🧮
 
