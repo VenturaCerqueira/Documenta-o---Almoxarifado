@@ -1,6 +1,6 @@
-# Guia de Organização de Documento - Patrimonio
+# Guia de Organização de Documento - Almoxarifado
 
-**Titulo:**  Organização mudanças sistema de patrimonio web. <br><br>
+**Titulo:**  Organização mudanças sistema de Almoxarifado web. <br><br>
 **Data inicio:**  2025-04-14 <br>
 **Ultima atualização:**  2025-04-14<br>
 **Version:**  1.0 <br>
@@ -26,7 +26,6 @@
 O sistema deve permitir que as entradas de notas fiscais possam ser continuada no dia seguinte e alteradas futuramente caso algum erro seja detectado.<br>
 
 **Atualmente:**![1744650244889](images/Documentacao/1744650244889.png)
-Movimentação Geral hoje funciona da seguinte forma ao iniciar clicando em "Criar Movimentação Geral", vem todas as solicitações de cadastro "Almoxarifado de Origem", "Operação" e outros campos.  Solicitação vai ser necessario criar uma novo "Status"(Em andamento) e uma nova opção em "Ações" para finalizar "Movimentação Geral".
 
 #### Solicitação de Alteração:
 
