@@ -1,6 +1,6 @@
 # Guia de Organização de Documento - Almoxarifado
 
-**Titulo:**  Organização mudanças sistema de Almoxarifado web. <br><br>
+**Titulo:**  Organização mudanças sistema de Almoxarifado web.<Br>
 **Data inicio:**  2025-04-14 <br>
 **Ultima atualização:**  2025-04-14<br>
 **Version:**  1.0 <br>
@@ -30,9 +30,9 @@ O sistema deve permitir que as entradas de notas fiscais possam ser continuada n
 #### Solicitação de Alteração:
 
 1. **Novo Status**:<br>
-   Será necessário adicionar o status **"Em andamento"**, para indicar que a movimentação está sendo realizada e ainda não foi concluída.
+   Será necessário adicionar um novo status **"Em andamento"**, para indicar que a movimentação está sendo realizada e ainda não foi concluída.
 2. **Nova Opção em "Ações"**:<br>
-   Será incluída uma opção na seção **Ações** para permitir a finalização da **Movimentação Geral**, facilitando o encerramento do processo diretamente pela interface.
+   Será incluída uma opção no botão **Ações** para permitir a finalização da **Movimentação Geral**, facilitando o encerramento do processo diretamente pela interface.
 
 ```
 Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
@@ -64,7 +64,7 @@ Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
    ```
 
    ![1744655997076](images/Documentacao/1744655997076.png)
-3. Criação de uma nova tela de confirmação ou Fianlização dos dados trazendo resumo mais um novo botão "Finalizar" --> atualizando "Situação" para 0 => 'Realizada'; (total da nota)<br>
+3. Criação de uma nova tela de confirmação ou Fianlização dos dados trazendo resumo mais um novo botão "Finalizar" --> atualizando "Situação" para 0 => 'Realizada'; <br>
    Exemplo igulmente a view:
    ![1744655844748](images/Documentacao/1744655844748.png)
 4. Criação de um novo campo ao selecionar "Entrada de Nota Fiscal" (Um cadastro de NFS - Nota fiscal) - sera necessario criação desse campo "Total da Nota" aonde ao finalizar utilizara para calculo de conferencia de preenchimento das informações.![1744745922626](images/Documentacao/1744745922626.png)
@@ -72,7 +72,7 @@ Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
    **Table:**  nota_fiscal
 
    **Columns:** <br>
-   Adicionar (total_nota decimal(10,3))
+   Adicionar (total_nota decimal(10,2))
 
 
    | **id**             | int AI PK      |
@@ -81,7 +81,7 @@ Codigo:  Almoxarifado --> View --> movimentacao-geral --> index.php line
    | numero             | varchar(100)   |
    | serie              | varchar(100)   |
    | data\_emissao      | date           |
-   | tota_nota          | decimal (10,3) |
+   | tota_nota          | decimal (10,2) |
 
 ## 2. Alteração de Lotações X Secretarias 🛠️
 
