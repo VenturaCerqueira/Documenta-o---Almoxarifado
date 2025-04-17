@@ -2,7 +2,7 @@
 
 **Titulo:**  Organização mudanças sistema de Almoxarifado web.<Br>
 **Data inicio:**  2025-04-14 <br>
-**Ultima atualização:**  2025-04-14<br>
+**Ultima atualização:**  2025-04-17<br>
 **Version:**  1.0 <br>
 **Sistema:**  Almoxarifado - web
 
