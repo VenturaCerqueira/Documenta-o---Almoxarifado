@@ -41,7 +41,7 @@ A implementação atual utiliza uma lógica baseada em quantos dias o estoque at
 
 **Passo 2: Calcular os Dias de Estoque Restante**
 
-* **`Saldo_Total_Atual`**: Obter o saldo de estoque físico atual do produto.
+* **`Saldo_Total_Atual`**: Obter o saldo de estoque físico atual do produto.****
 * **`Dias_Estoque_Restante`**: `Saldo_Total_Atual / Consumo_Medio_Diario`
   * *(Nota: Tratar divisão por zero se `Consumo_Medio_Diario` for 0).*
 
@@ -64,7 +64,7 @@ Para atender ao pedido de sinalizar por **proximidade da validade**, uma lógica
 * **`Data_Validade_Mais_Proxima`**: A data de validade mais próxima entre os lotes em estoque.
 * **`Dias_Para_Vencer`**: `Data_Validade - Data_Atual`
 
-**Passo 3: Definir a Cor com Base nos Dias Para Vencer**
+**Passo 3: Definir a Cor com Base nos Dias Para Vencer******
 
 * Se `Dias_Para_Vencer` <= 30: **Vermelho** 🔴 (Vencimento muito próximo)
 * Se `Dias_Para_Vencer` > 30 E `Dias_Para_Vencer` <= 90: **Amarelo** 🟡 (Vencimento em médio prazo)
