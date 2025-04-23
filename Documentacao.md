@@ -64,7 +64,7 @@ Para atender ao pedido de sinalizar por **proximidade da validade**, uma lógica
 * **`Data_Validade_Mais_Proxima`**: A data de validade mais próxima entre os lotes em estoque.
 * **`Dias_Para_Vencer`**: `Data_Validade - Data_Atual`
 
-**Passo 3: Definir a Cor com Base nos Dias Para Vencer******
+**Passo 3: Definir a Cor com Base nos Dias Para Vencer**
 
 * Se `Dias_Para_Vencer` <= 30: **Vermelho** 🔴 (Vencimento muito próximo)
 * Se `Dias_Para_Vencer` > 30 E `Dias_Para_Vencer` <= 90: **Amarelo** 🟡 (Vencimento em médio prazo)
